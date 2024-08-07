@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather</title>
+    <link rel="icon" href="icon.png" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather">
+      <h1>My Weather</h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Enter City Name!"
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='Enter City Name!'"
+        />
+        <button><i class="bi bi-search"></i></button>
+      </div>
+      <p class="error">Invalid City Name!</p>
+      <div class="weather-info">
+        <i class="weather-icon"></i>
+        <p class="temp"></p>
+        <p class="city"></p>
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-fan"> Humidity: <span class="humid"></span> %</i
+            ><br /><br />
+            <i class="bi bi-wind">
+              Wind Speed: <span class="wind"></span> km/h</i
+            >
+          </div>
+          <div class="col">
+            <i class="bi bi-person-standing">
+              Feels like: <span class="feeling"></span>°C</i
+            >
+            <br /><br />
+            <i class="bi bi-brightness-alt-low-fill">
+              Sunset: <span class="sunset"></span
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
